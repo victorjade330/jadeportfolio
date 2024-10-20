@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web & Mobile Dev Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+
+}
+.hero-section2{
+  margin-bottom:120px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image img {
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.available-badge {
+  background-color: #2ec866;
+  color: #111;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-family: inter var;
+  height:35px;
+  align-content: center;
+  width: 120px;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* Flexbox container for the images */
+.img-1 {
+  display: flex;
+  justify-content: space-evenly; /* Make sure images are evenly spaced */
+  align-items: center; /* Vertically align images */
+  gap: 10px; /* Reduce gap between images */
+  margin: 20px; /* Add some margin around the container if necessary */
+}
+
+/* Make the images larger */
+.img-1 img {
+  height: 150px; /* Increase the height of the images */
+  object-fit: contain; /* Keeps the images proportional */
+}
+
+/* You can fine-tune the size based on design needs */
+
+.fac-1{
+  width: 500px;
+}
+.beh-1{
+  width:auto;
+  margin-left: 40px;
+}
+.net-1{
+  
+}
+.in-1{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0px 0px 48px;
+  font-size: 24px;
+  text-align: center;
+}
+/* Styling for the entire projects section */
+.projects-section {
+  background-color: rgba(0, 0, 0, 0.9); /* Black with slight transparency */
+  padding: 50px;
+  text-align: center;
+  color: white; /* White text for the section */
+}
+
+/* Heading styling */
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fff; /* White color for the heading */
+}
+
+/* Grid layout for the project images */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Spacing between the images */
+}
+
+/* Individual project item styling */
+.project-item {
+  text-align: center;
+}
+
+/* Image styling */
+.project-item img {
+  width: 100%;
+  border-radius: 15px; /* Border radius for rounded corners */
+  object-fit: cover;
+  max-height: 300px; /* Ensure uniform image height */
+}
+
+/* Text below the images */
+.project-item p {
+  color: #ccc; /* Light gray for the description text */
+  margin-top: 10px;
+  font-size: 18px;
+}
+.show-1{
+  background-color:#ff5733;
+  width:120px;
+  height:40px;
+  border-radius:14px;
+  border: none;
+  color: white;
+  margin-top:150px;
+  cursor: pointer;
+}
+.my-ser{
+  color:#FDBA74;
+  font-size: 20px;
+  text-align: center;
+  font-family: Times New Roman;
+  padding-top: 45px;
+}
+.hero-section2{
+  margin-top: 40px;
+}
+.Dig-tal{
+color:#FFFFFF;
+font-size:35px;
+font-family:sans-serif;
+text-align: center;
+margin: 8px 0px 0px;
+font-weight: bolder;
+}
+.web-m{
+  text-align: center;
+  color: #E5E5E5;
+  margin-top: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+/* Basic styling for the section */
+.custom-section {
+    padding: 50px 0;
+    background-color: #f4f4f4; /* Change background color as needed */
+    text-align: center;
+}
+
+.custom-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 120px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gallery image styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of images if screen is smaller */
+}
+
+.gallery-image {
+    width: 30%; /* Adjust the size of the images */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow under images */
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+/* Container for the unique layout */
+.unique-projects-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* Each project item */
+.unique-project-item {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.unique-project-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Image wrapper to control image styling */
+.project-image-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.unique-project-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Overlay title below the image */
+.overlay-title {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Container for the unique layout */
+.unique-projects-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Each project item */
+.unique-project-item {
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.unique-project-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Image wrapper to control image styling */
+.project-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    transition: transform 0.4s ease;
+}
+
+.project-image-wrapper:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Overlay title on the image */
+.overlay-title {
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Description styling below the image */
+.project-description {
+    font-size: 16px;
+    color:#A3A3A3;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #f4b61a;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0 30px 0;
+    font-weight: bold;
+    color: #fff;
+  }
+
+.testimonial-card {
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-20px);
+}
+
+.testimonial-text {
+  padding: 20px;
+  font-size: 16px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f3f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-title {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Testimonial Cards Container */
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.testimonial-card {
+  width: 350px;
+  height: 400px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #171717, #171717);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-text {
+  padding: 20px;
+  font-size: 16px;
+  color: #f1f1f1;
+  line-height: 1.6;
+  height: 70%;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card:hover .testimonial-text {
+  transform: translateY(-50px);
+}
+
+.hidden-content {
+  padding: 10px;
+  background-color: #383838;
+  color: #ccc;
+  height: 50px;
+  display: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.testimonial-card:hover .hidden-content {
+  display: block;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #141414;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+.user-title {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+.testimonial-section{
+  background-color: #262626;
+  padding-top: 128px;
+  padding-left:80px;
+}
+.client-head{
+color: #FDBA74;
+font-size:16px;
+font-family:sans-serif;
+padding-bottom: 12px;
+}
+.client-story{
+color: #FFFFFF;
+font-size: 34px;
+font-weight: bold;
+font-family:sans-serif;
+margin-bottom:70px;
+
+}
+.faq-section {
+  padding: 40px;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.faq-section h2 {
+  font-size: 28px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: ;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+  transition: all 0.4s ease;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-size: 18px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.faq-question:after {
+  content: '+';
+  font-size: 24px;
+  color: #999;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #ff5733; /* Orange hover effect */
+  background-color: #333;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+  background-color: #292929;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Active FAQ Item Styles */
+.faq-item.active .faq-answer {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.faq-item.active .faq-question:after {
+  content: '-';
+  color: #ff5733; /* Orange minus */
+  transform: rotate(180deg);
+}
+
+/* FAQ Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 90%;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+
+/* Animation for the answer display */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* Banner container */
+.digital-presence-banner {
+  position: relative;
+  background-image: url('bg10.jpg'); /* Add your background image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  border-radius: 15px; /* Rounded corners */
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hides any overflow from the overlay */
+  margin-top: 250px;
+}
+
+/* Overlay effect for darkening the background */
+.digital-presence-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black layer for contrast */
+  z-index: 1; /* Ensures the overlay is behind the text */
+  border-radius: 15px;
+}
+
+/* Banner content */
+.banner-content {
+  position: relative;
+  z-index: 2; /* Ensures content is on top of the overlay */
+  max-width: 800px;
+  color: white; /* White text color */
+}
+
+/* Title styling */
+.banner-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Text styling */
+.banner-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+.banner-button {
+  display: inline-block;
+  background-color: #ff5733; /* Orange button */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #e65a00; /* Darker orange on hover */
+}
+
+
+/* Banner content */
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white; /* White text color */
+}
+
+/* Title styling */
+.banner-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Text styling */
+.banner-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+.banner-button {
+  display: inline-block;
+  background-color: #ff5733; /* Orange button */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #e65a00; /* Darker orange on hover */
+}
+/* Footer Styling */
+.footer {
+  background-color: #1b1b1b; /* Dark background */
+  color: #aaa; /* Light grey text */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #333; /* Thin line on top */
+  margin-top: 70px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em; /* Slightly smaller text */
+}
+
+/* Footer Icons Styling */
+.footer-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.footer-icon {
+  color: #aaa;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #fff; /* Changes icon color on hover */
+}
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF5733; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Add more styles as needed */
+}
+
+.scroll-to-top-button:hover {
+    /* Add hover effects if desired */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: none; /* Hide the default cursor */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: none; /* Hide the default cursor */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: none; /* Hide the default cursor */
+}
+
+.cursor-trail {
+    position: absolute;
+    width: 6px; /* Reduced thickness */
+    height: 6px; /* Reduced thickness */
+    background-color: rgba(255, 87, 51, 0.4); /* Light color with lower opacity for visibility */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Prevent interference with mouse events */
+    transform: translate(-50%, -50%); /* Center the circle on the cursor */
+    transition: transform 0.15s ease; /* Smooth transition effect */
+    will-change: transform; /* Optimize for animation */
+}
+
+/* Full-screen loading effect */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF5733;
+  animation: loading-fade 2s infinite ease-in-out;
+}
+
+@keyframes loading-fade {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-wrapper {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-nav .nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .nav-item {
+    margin: 0 15px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header-nav a:hover {
+    color: #ff5733; /* Change color on hover */
+}
+.header-cta {
+    background-color: #ff5733; /* Call to action button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.header-cta:hover {
+    background-color: #FF5733; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start;
+    }
+    .header-nav .nav-list {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 10px;
+    }
+    .header-nav .nav-item {
+        margin: 5px 0; /* Adjust margin for stacked items */
+    }
+}
+/* Style for the menu toggle button */
+.menu-toggle {
+    background-color: #FF5733; /* Orange background */
+    color: #FFF; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for a better size */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    display: none; /* Hidden by default, shown on mobile */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Change background on hover */
+.menu-toggle:hover {
+    background-color: #e74c3c; /* Slightly darker orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the menu button on smaller screens */
+    }
+}
+
+</style>
+</head>
+<body>
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-circle"></div>
+  </div>
+  
+ <!-- Navbar/Header Section -->
+<header class="header-wrapper">
+  <div class="header-container"> 
+      <div class="header-logo">
+          <h1>Victor Jade</h1>
+      </div>
+      <nav class="header-nav">
+          <ul class="nav-list">
+              <li class="nav-item"><a href="#projects">Projects</a></li>
+              <li class="nav-item"><a href="#services">Services</a></li>
+              <li class="nav-item"><a href="#faqs">FAQs</a></li>
+          </ul>
+      </nav>
+      <a href="#contact" class="header-cta">Get in touch!</a>
+  </div>
+</header>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-image">
+        <img src="https://images.pexels.com/photos/19892581/pexels-photo-19892581/free-photo-of-back-view-of-a-man-sitting-at-the-table-with-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Person working on laptop">
+      </div>
+      <div class="hero-text">
+        <span class="available-badge">Available for hiring!</span>
+        <h2>Web & Mobile Dev, Design Excellence.</h2>
+        <p>Crafting digital excellence in web/mobile dev and design—your gateway to standout online presence.</p>
+        <a href="#contact" class="contact-btn">Contact me</a>
+      </div>
+    </div>
+  </section>
+  <p class="in-1">Trusted by the world’s most innovative teams at</p>
+<div class="img-1">
+  <img class="net-1" src="BrandAssets_Logos_06-SpecialUse_02-removebg-preview.png " alt="">
+  <img class="fac-1" src="facebook-logo-white-full-transparent-removebg-preview.png" alt="">
+  <img class="beh-1" src="images-removebg-preview (1).png" alt="">
+</div>
+<section class="projects-section">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-item">
+      <img src="bg5.jpg" alt="Project 1">
+      <p style="font-size:28px; color: rgb(194, 190, 190);" >System Development</p>
+    </div>
+    <div class="project-item"> 
+      <img src="bg2.jpg" alt="Project 2">
+      <p style="font-size:28px; color: rgb(194, 190, 190);" >Build Native Apps</p> 
+    </div>
+    <div class="project-item">
+      <img src="bg3.jpg" alt="Project 3">
+      <p style="font-size:28px; color: rgb(194, 190, 190);" >User Interface</p>
+    </div>
+    <div class="project-item">
+      <img src="bg4 (1).jpg" alt="Project 4">
+      <p style="font-size:28px; color: rgb(194, 190, 190);" >Data Management</p>
+    </div>
+  </div>
+  <button class="show-1">Show More</button>
+</section>
+<section class="hero-section2">
+  <p class="my-ser">My Services</p>
+  <p class="Dig-tal">Integrated Digital Solution</p>
+  <p class="web-m"> Mobile, and Design Services Tailored for Excellence.</p>
+ 
+  <div class="unique-projects-layout">
+    <div class="unique-project-item">
+        <div class="project-image-wrapper">
+            <img src="bg7.jpg" alt="System Development">
+            <h3 class="overlay-title">Web Development</h3>
+        </div>
+        <p class="project-description">Interactive User Interfaces, Dynamic Server-Side Applications, and E-commerce & Business Platforms.</p>
+    </div>
+    <div class="unique-project-item">
+        <div class="project-image-wrapper">
+            <img src="bg8.jpg" alt="Build Native Apps">
+            <h3 class="overlay-title">Mobile Development</h3>
+        </div>
+        <p class="project-description">Native and Hybrid Apps, User-Centric Design, and Performance Optimization.</p>
+    </div>
+    <div class="unique-project-item">
+        <div class="project-image-wrapper">
+            <img src="bg6.jpg" alt="User Interface">
+            <h3 class="overlay-title">Web Design</h3>
+        </div>
+        <p class="project-description">Aesthetic & Functional Design, Brand Identity Creation, and Responsive Layouts and Prototyping.</p>
+    </div>
+</div>
+</section>
+<section class="testimonial-section">
+  <p class="client-head">Satisfied Client speak out</p>
+  <p class="client-story"> Real stories from real customers.</p>
+<div class="testimonial-container">
+  <div class="testimonial-card">
+    <div class="testimonial-text">
+      "Amazing experience! The design is sleek, modern, and exactly what I was looking for. Will definitely recommend."
+    </div>
+    <div class="hidden-content">⭐⭐⭐⭐⭐ 5/5</div>
+    <div class="user-info">
+      <img src="st1.jpg" alt="User Photo" class="profile-image">
+      <div>
+        <div class="user-name">John Doe</div>
+        <div class="user-title">Marketing Manager, BrandCo</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-text">
+      "This service exceeded my expectations. The UI is user-friendly, and the performance is top-notch. I'm impressed!"
+    </div>
+    <div class="hidden-content">⭐⭐⭐⭐⭐ 5/5</div>
+    <div class="user-info">
+      <img src="st2.jpg" alt="User Photo" class="profile-image">
+      <div>
+        <div class="user-name">Jane Smith</div>
+        <div class="user-title">CTO, TechSolutions</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <div class="testimonial-text">
+      "A truly exceptional product! From design to functionality, everything works flawlessly. I couldn't ask for more."
+    </div>
+    <div class="hidden-content">⭐⭐⭐⭐⭐ 5/5</div>
+    <div class="user-info">
+      <img src="st3.jpg" alt="User Photo" class="profile-image">
+      <div>
+        <div class="user-name">Emily Johnson</div>
+        <div class="user-title">CEO, InnovateCorp</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">What is the role of HTML in modern web development?</div>
+      <div class="faq-answer">
+        HTML (HyperText Markup Language) serves as the foundation of all web pages. Its primary purpose is to structure content on the web. Modern web development goes beyond simple static pages; HTML now works alongside powerful tools like CSS and JavaScript to create dynamic, responsive, and interactive experiences. HTML5, the latest version, introduces several new elements and APIs, making it easier to handle multimedia, graphics, and user input without relying on external plugins.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How does CSS contribute to responsive web design?</div>
+      <div class="faq-answer">
+        CSS (Cascading Style Sheets) plays a crucial role in responsive web design, ensuring that web pages adapt to different screen sizes and devices. By using flexible grids, fluid layouts, and media queries, CSS allows developers to create websites that look and function well on a variety of devices, from smartphones to desktops. CSS frameworks like Bootstrap and Tailwind CSS further simplify the process of building responsive websites by providing predefined styles and layouts.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is a QR code?</div>
+      <div class="faq-answer">
+        A QR code is a type of matrix barcode that stores data and is readable by digital devices like smartphones.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is a wireframe?</div>
+      <div class="faq-answer">
+        A wireframe is a blueprint or schematic that represents the structure of a webpage or app without visual design elements.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is a chatbot?</div>
+      <div class="faq-answer">
+        A chatbot is an AI-based application designed to simulate conversation with users, typically used for customer service or information retrieval.
+      </div>
+    </div>
+  </div> 
+  <div class="digital-presence-banner">
+    <div class="banner-content">
+      <h2 class="banner-title">Ready to Elevate Your Digital Presence?</h2>
+      <p class="banner-text">Connect with me and let's build something amazing together.</p>
+      <a href="#" class="banner-button">Get Started</a>
+    </div>
+  </div>
+  
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2024 Your Company, Inc. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-github"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<body>
+  <button class="scroll-to-top-button">
+    <i class="fa fa-angle-up"></i>
+</button>
+
+<script>
+ 
+ document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    const currentFaq = item.parentElement;
+    const allFaqItems = document.querySelectorAll('.faq-item');
+
+    // Close all other open FAQ items
+    allFaqItems.forEach(faq => {
+      if (faq !== currentFaq) {
+        faq.classList.remove('active');
+      }
+    });
+
+    // Toggle the clicked FAQ item
+    currentFaq.classList.toggle('active');
+  });
+});
+
+const scrollToTopButton = document.querySelector('.scroll-to-top-button');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        scrollToTopButton.classList.add('visible');
+    } else {
+        scrollToTopButton.classList.remove('visible');
+    }
+});
+
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+  document.addEventListener('mousemove', function(e) {
+    let trail = document.createElement('div');
+    trail.className = 'cursor-trail';
+    document.body.appendChild(trail);
+
+    trail.style.left = e.pageX + 'px';
+    trail.style.top = e.pageY + 'px';
+
+    setTimeout(() => {
+      trail.remove();
+    }, 3000); // trail lasts for 3 seconds before disappearing
+  });
+
+  
+  window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.transition = 'opacity 10s ease';
+    loadingScreen.style.opacity = '0';
+    setTimeout(() => {
+      loadingScreen.style.display = 'none';
+    }, 1000); // Wait for the fade-out animation to finish
+  });
+// Create a custom cursor trail
+const trail = document.createElement('div');
+trail.className = 'cursor-trail';
+document.body.appendChild(trail);
+
+// Array to hold the positions of the trail dots
+const positions = [];
+const maxDots = 10; // Maximum number of trail dots
+
+// Function to create a trail effect
+function createTrail(e) {
+    // Update the position of the main cursor
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+
+    // Add current position to the positions array
+    positions.push({ x: e.pageX, y: e.pageY });
+
+    // Limit the number of positions stored
+    if (positions.length > maxDots) {
+        positions.shift(); // Remove the oldest position
+    }
+
+    // Animate trail effect
+    positions.forEach((pos, index) => {
+        const dot = document.createElement('div');
+        dot.className = 'cursor-trail';
+        dot.style.left = `${pos.x}px`;
+        dot.style.top = `${pos.y}px`;
+        dot.style.opacity = `${1 - index / maxDots}`; // Fade out effect
+
+        // Append the dot to the body
+        document.body.appendChild(dot);
+
+        // Animate the dot
+        setTimeout(() => {
+            dot.style.transform = 'scale(0.5)'; // Shrink the dot
+            dot.style.opacity = '0'; // Fade out completely
+        }, 50);
+
+        // Remove the dot after animation
+        setTimeout(() => {
+            dot.remove();
+        }, 200);
+    });
+}
+
+// Attach the mousemove event to create the trail
+document.addEventListener('mousemove', createTrail);
+
+
+</script>
+</body>
+</html>
